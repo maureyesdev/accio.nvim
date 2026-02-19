@@ -16,6 +16,11 @@ M.defaults = {
   replace_expanded = false,
   -- Show file filter section expanded by default
   filters_expanded = false,
+  -- Layout backend: "auto" | "snacks" | "plain"
+  --   "auto"   use Snacks.layout when snacks.nvim is installed, else plain splits
+  --   "snacks" always use Snacks.layout (requires snacks.nvim)
+  --   "plain"  always use raw splits even when snacks.nvim is present
+  layout = "auto",
 }
 
 ---@type accio.Config
